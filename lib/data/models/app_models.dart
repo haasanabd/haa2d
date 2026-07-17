@@ -262,12 +262,12 @@ class SaleInvoiceItem extends Equatable {
   factory SaleInvoiceItem.fromMap(Map<String, dynamic> map) {
     return SaleInvoiceItem(
       id: map['id'],
-      invoice_id: map['invoice_id'],
-      product_id: map['product_id'],
+      invoiceId: map['invoice_id'],
+      productId: map['product_id'],
       quantity: map['quantity'],
       price: map['price'],
       subtotal: map['subtotal'],
-    );
+     );
   }
 
   @override
@@ -352,10 +352,10 @@ class PurchaseInvoiceItem extends Equatable {
   factory PurchaseInvoiceItem.fromMap(Map<String, dynamic> map) {
     return PurchaseInvoiceItem(
       id: map['id'],
-      invoice_id: map['invoice_id'],
-      raw_material_id: map['raw_material_id'],
-      quantity_gram: map['quantity_gram'],
-      price_per_gram: map['price_per_gram'],
+      invoiceId: map['invoice_id'],
+      rawMaterialId: map['raw_material_id'],
+      quantityGram: map['quantity_gram'],
+      pricePerGram: map['price_per_gram'],
       subtotal: map['subtotal'],
     );
   }
@@ -408,13 +408,13 @@ class Production extends Equatable {
     return Production(
       id: map['id'],
       date: map['date'],
-      product_id: map['product_id'],
-      raw_material_id: map['raw_material_id'],
-      consumed_weight_gram: map['consumed_weight_gram'],
-      produced_weight_gram: map['produced_weight_gram'],
-      waste_percentage: map['waste_percentage'],
-      production_cost: map['production_cost'],
-      selling_price: map['selling_price'],
+      productId: map['product_id'],
+      rawMaterialId: map['raw_material_id'],
+      consumedWeightGram: map['consumed_weight_gram'],
+      producedWeightGram: map['produced_weight_gram'],
+      wastePercentage: map['waste_percentage'],
+      productionCost: map['production_cost'],
+      sellingPrice: map['selling_price'],
       notes: map['notes'],
     );
   }
