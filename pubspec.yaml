@@ -19,7 +19,7 @@ dependencies:
   equatable: ^2.0.5
   shared_preferences: ^2.2.2
   image_picker: ^1.0.4
-  file_picker: ^6.1.1
+  file_picker: ^10.2.0
   fl_chart: ^0.65.0
   google_fonts: ^6.1.0
   cupertino_icons: ^1.0.6
